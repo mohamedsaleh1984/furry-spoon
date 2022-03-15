@@ -44,5 +44,5 @@ import bodyParser from "body-parser";
     res.redirect("/");
   });
 
-  app.listen(80);
+  app.listen(3001);
 })();
