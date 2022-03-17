@@ -16,7 +16,12 @@ Start Conatiner after Stoping
 docker start container_name
 
 Assign Name to the container
-6. docker run -p 3000:80 -d --rm --name a0dddd02ada6 SmolDragon
+6. docker run -p 3000:80 -d --rm --name smoldragon e136b00ac809
+-p => mapping local port: conatiner port
+--rm => remove the conatiner after it's stops
+--name => assign name
+e136b00ac809 => image name
+**  the conatiner name must be lowercase.
 
 Remove container
 7. docker rm container_name
