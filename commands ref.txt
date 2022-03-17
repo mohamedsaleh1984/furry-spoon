@@ -51,4 +51,10 @@ Run container based on Tagged image
 Remove all unused images 
 14. docker image prune -a
 
+Create a Tag to an Image (has to be done in Build process)
+15. docker build -t node-demo-app:latest .  
+
+
+
+
 
