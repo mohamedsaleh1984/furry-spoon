@@ -69,6 +69,7 @@ In case access was denied to push an image, we need to login to docker hub accou
 to Logout
 19: docker logout
 
-
+pull docker image from repo
+20: docker pull mohamedsaleh1984/node-demo-app
 
 
