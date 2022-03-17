@@ -2,26 +2,36 @@
 docker run node		silent Mode
 docker run -it node		Interactive Mode (Make a session between the container and our machine)
 
-List all containers
-2. docker images "List all images"
+List all images
+2. docker images 
 
 show all running containers
 3. docker ps -a
 
+Stop Container
+4. docker stop Conatiner_ID
+
+Start Conatiner after Stoping
+5. docker start -a <=== find the conatiner name from the List
+docker start container_name
+
+Assign Name to the container
+6. docker run -p 3000:80 -d --rm --name a0dddd02ada6 SmolDragon
+
 Remove container
-4. docker rm container_name
+7. docker rm container_name
 
 Remove Images
-5. docker rmi imagehash
+8. docker rmi imagehash
 
 Start Image in Deattach mode and map it to port and then remove the container automatically when it stops
-6. docker run -p 3000:80 -d --rm hash
+9. docker run -p 3000:80 -d --rm hash
 
 Figure out the image information and it's layers
-7. docker inspect IMAGE_ID
+10. docker inspect IMAGE_ID
 
 Copy a file from local machine to Docker container
-8. After running a container, find the name using 'docker ps -a'
+11. After running a container, find the name using 'docker ps -a'
 docker cp dummy/. containerName:/test
 dummy/. => everything inside this folder
 /test => directory inside the container
