@@ -54,6 +54,11 @@ Remove all unused images
 Create a Tag to an Image (has to be done in Build process)
 15. docker build -t node-demo-app:latest .  
 
+Sharing/Pushing Image to Private/Public registry we need to Rename the local Image to match the repo name
+https://hub.docker.com/repository/docker/mohamedsaleh1984/node-demo-app
+16.  docker tag node-demo-app:latest mohamedsaleh1984/node-demo-app
+
+
 
 
 
