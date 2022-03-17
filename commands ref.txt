@@ -45,6 +45,10 @@ Assign name to Image "must be done in the build process"
 12. docker build -t smoldragon:latest .
 . <= current location where Dockerfile is located
 
+Run container based on Tagged image
+13. docker run -p 3000:80 -d --rm --name consmoldragon smoldragon:latest
 
+Remove all unused images 
+14. docker image prune -a
 
 
