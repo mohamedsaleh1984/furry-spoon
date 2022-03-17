@@ -41,5 +41,10 @@ docker cp dummy/. containerName:/test
 dummy/. => everything inside this folder
 /test => directory inside the container
 
+Assign name to Image "must be done in the build process"
+12. docker build -t smoldragon:latest .
+. <= current location where Dockerfile is located
+
+
 
 
