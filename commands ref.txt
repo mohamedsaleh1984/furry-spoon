@@ -63,6 +63,11 @@ https://hub.docker.com/repository/docker/mohamedsaleh1984/node-demo-app
 Push image to repo
 17. docker push mohamedsaleh1984/node-demo-app
 
+In case access was denied to push an image, we need to login to docker hub account LOCALLY using
+18. docker login
+
+to Logout
+19: docker logout
 
 
 
