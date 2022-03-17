@@ -71,5 +71,8 @@ to Logout
 
 pull docker image from repo
 20: docker pull mohamedsaleh1984/node-demo-app
+to run the image we need to give the full name
+docker run -p 3000:3000 --rm mohamedsaleh1984/node-demo-app
+
 
 
