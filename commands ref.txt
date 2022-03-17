@@ -58,6 +58,10 @@ Sharing/Pushing Image to Private/Public registry we need to Rename the local Ima
 https://hub.docker.com/repository/docker/mohamedsaleh1984/node-demo-app
 16.  docker tag node-demo-app:latest mohamedsaleh1984/node-demo-app
 
+** When we rename an Image we don't get rid of the old one (it's just a clone)
+
+Push image to repo
+17. docker push mohamedsaleh1984/node-demo-app
 
 
 
