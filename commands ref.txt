@@ -75,7 +75,11 @@ to run the image we need to give the full name
 docker run -p 3000:3000 --rm mohamedsaleh1984/node-demo-app
 
 We can automatically Pull and Run docker image if We don't have it locally.
-docker run mohamedsaleh1984/node-demo-app
+21: docker run mohamedsaleh1984/node-demo-app
 
+Build Image and Run container with Image Tags and container name
+22: 
+docker build -t feeback-node .										<= 	Build an image from Dockerfile in current directory
+docker run -p 3000:80 -d --name feedback-app --rm feeback-node		<=	Run container
 
 
