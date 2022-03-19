@@ -87,3 +87,22 @@ Copy a file from Docker container to local machine
 23. After running a container, find the name using 'docker ps -a'
 docker cp feedback-app:/app/feedback ./FilesFromContainer
 NOTE: you need to specify the fully qualified name for the directory
+
+
+Volumes Section
+-------------------
+Named volumes: Managed and controlled by US, get generated while we BUILD the image
+Anonymous volumes: Managed and controlled by Docker, get generated automatically
+
+--To add anonymous volumes, add below line
+VOLUME [ "/app/feedback" ]				<= assign container path to be Mapped to LOCAL 
+--To show current volumes
+docker volume ls
+--To remove unused volumes
+docker volume prune
+-- To view all commands for volumes 
+docker volume --help
+
+
+Save Persisteant Data through VOLUME mouting/mapping a drive, folder from Local Machine to Container
+24. 
