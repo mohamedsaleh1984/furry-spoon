@@ -91,7 +91,7 @@ NOTE: you need to specify the fully qualified name for the directory
 
 Volumes Section
 -------------------
-Named volumes: Managed and controlled by US, get generated while we BUILD the image
+Named volumes: Managed and controlled by docker, get generated while we BUILD the image and name still reserved 
 Anonymous volumes: Managed and controlled by Docker, get generated automatically, get removed automatically WHEN the conatiner Stops
 
 --To add anonymous volumes, add below line
@@ -103,13 +103,12 @@ docker volume prune
 -- To view all commands for volumes 
 docker volume --help
 
-
 Save Persisteant Data through VOLUME mouting/mapping a drive, folder from Local Machine to Container
 24. VOLUME [ "/app/feedback" ]			<= inside Dockerfile
-
 
 Map conatiner path to NAMED volumn
 25. docker run -d -p 3000:80 --rm --name feedback-app -v feedback:/app/feedback feedback:latest
 feedback:/app/feedback		Name:Path inside the conatiner
 
-
+Bind Mount
+-------------
